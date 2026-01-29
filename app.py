@@ -13,7 +13,7 @@ def home():
         <input type="text" name="caracter" maxlength="1" required>
         <button type="submit">Comprobar</button>
     </form>
-    <p>Puedes probar letras y ver colores!</p>
+    
     """
 
 @app.route("/comprobar")
