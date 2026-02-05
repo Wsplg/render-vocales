@@ -19,8 +19,8 @@ def home():
 def comprobar():
     caracter = request.args.get("caracter", "").lower()
 
-    if caracter == "":
-        return "<p style='color:red;'>No has escrito ningún carácter</p>"
+    if caracter == ".":
+        return "<p style='color:red;'>Que ten bien fuertito, Ancor.</p>"
 
     # Comprobar si es letra
     if not caracter.isalpha():
