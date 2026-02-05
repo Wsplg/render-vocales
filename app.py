@@ -22,17 +22,14 @@ def comprobar():
     if caracter == "":
         return "<p style='color:red;'>No has escrito ningún carácter</p>"
 
+    # 👉 NUEVO: comprobar si es un punto
+    if caracter == ".":
+        return "<p style='color:black; font-size:24px;'>Que te jodan Ancor</p>" \
+               "<a href='/'>Volver</a>"
+
     # Comprobar si es letra
     if not caracter.isalpha():
         return f"<p style='color:orange; font-size:24px;'>{caracter} no es una letra</p>" \
                "<a href='/'>Volver</a>"
 
-    if caracter in vocales:
-        return f"<p style='color:green; font-size:24px;'>{caracter.upper()} es una VOCAL</p>" \
-               "<a href='/'>Volver</a>"
-    else:
-        return f"<p style='color:blue; font-size:24px;'>{caracter.upper()} NO es una vocal</p>" \
-               "<a href='/'>Volver</a>"
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    if carac
